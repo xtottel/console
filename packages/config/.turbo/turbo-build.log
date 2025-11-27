@@ -1,0 +1,3 @@
+$ tsc
+src/env.ts(2,19): error TS2307: Cannot find module 'zod' or its corresponding type declarations.
+src/env.ts(14,39): error TS7006: Parameter 'val' implicitly has an 'any' type.
