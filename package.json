@@ -1,0 +1,28 @@
+
+{
+  "name": "sendexa",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "tools/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "test": "turbo test",
+    "type-check": "turbo type-check",
+    "lint": "turbo lint",
+    "db:generate": "cd packages/database && bun run db:generate",
+    "db:push": "cd packages/database && bun run db:push",
+    "db:studio": "cd packages/database && bun run db:studio",
+    "clean": "rm -rf node_modules packages/*/node_modules apps/*/node_modules"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.2",
+    "typescript": "^5.4.5",
+    "@types/bun": "latest"
+  },
+  "packageManager": "bun@1.1.8"
+}
